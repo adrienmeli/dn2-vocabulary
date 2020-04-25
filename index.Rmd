@@ -197,47 +197,13 @@ Attention à l'emplacement des adverbes dits "de fréquence", qui s'insèrent so
 
 # Les prépositions
 
-Les prépositions sont une catégorie de mots limitée. 
-    on
-    in
-    at
-    since
-    for
-    before
-    to
-    past
-    till 
-    until
-    by
-    at
-    on
-    by, next to, beside
-    under
-    below
-    over
-    above
-    across
-    through
-    into
-    towards
-    onto
-    from
-    of
-    by
-    on
-    in
-    off
-    out of
-    by
-    at
-    about
 
 # Vocabulaire
 
 ```{r tableau }
 
 library(tidyverse)
-df <- read_csv("data/vocabulary.csv",  col_names=TRUE)
+df <- read_delim("data/vocabulary.csv", col_names=TRUE,delim=";",quoted_na=FALSE,na=character())
 
 if (knitr::is_latex_output()) {
   knitr::kable(df, "latex", booktabs = T, longtable = T) %>%
