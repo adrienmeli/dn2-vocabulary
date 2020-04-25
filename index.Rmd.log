@@ -1,0 +1,12 @@
+
+
+processing file: index.Rmd
+Parsed with column specification:
+cols(
+  Anglais = col_character(),
+  Français = col_character()
+)
+output file: index.knit.md
+
+
+Output created: index.html
